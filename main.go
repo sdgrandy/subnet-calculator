@@ -11,8 +11,14 @@ import (
 
 func main() {
 	var input string
-	fmt.Println("Enter the number of network bits: (a value between 1 and 32)")
-	fmt.Scanln(&input)
+
+	val, present := os.LookupEnv("BITS")
+	if present {
+		input = val
+	} else {
+		fmt.Print("Enter the number of network bits: (a value between 1 and 32): ")
+		fmt.Scanln(&input)
+	}
 
 	n, err := strconv.Atoi(input)
 	if err != nil {

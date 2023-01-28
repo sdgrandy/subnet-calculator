@@ -1,3 +1,3 @@
-module sdgrandy/subnet-mask-calculator
+module sdgrandy/subnet-calculator
 
 go 1.17
