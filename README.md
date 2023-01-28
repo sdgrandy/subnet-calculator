@@ -1,3 +1,3 @@
 # subnet-mask-calculator
 
-Enter the number of network bits in the subnet mask. The subnet(s) neeeded to cover the IP address in ips.txt will be printed to standard output.
+Enter the number of desired number of network bits. The subnet(s) needed to cover the IP address in the file ips.txt will be printed to standard output.
